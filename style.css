@@ -1,0 +1,165 @@
+body {
+  margin: 0;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  margin: 0%;
+  background-color: #2bb7ec;
+  padding: 0.4% 0%;
+  /* opacity: 0.7; */
+  transition: 0.3s;
+  z-index: 99;
+}
+
+nav:hover {
+  transition: 0.5s;
+  opacity: 0.9;
+}
+
+nav ul {
+  list-style: none;
+  text-align: left;
+  display:block;
+}
+
+nav ul li {
+  display:inline;
+  color: #fff;
+  padding: 0% 5% 0% 2%;
+  font-family: Verdana,Geneva,sans-serif;
+  font-size: 1em;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+nav a:hover {
+  color: #444444;
+  transition: 0.4s;
+}
+
+#searchbar {
+  position: absolute;
+  z-index: 3;
+  background: transparent;
+  width: 12.5%;
+  border: 1px solid #fff;
+  border-radius: 2px;
+  padding: 0.5% 1.5%;
+  right: 2%;
+  top: 20%;
+  text-align: left;
+  /* opacity: 0.7; */
+  background-image: url(search.png);
+  background-repeat: no-repeat;
+  background-position: 5%;
+  color: #fff;
+}
+
+#searchbar:focus {
+  opacity: 0.9;
+  transition: 0.3s;
+  background color: rgba(255, 255, 255, 0.9);
+  outline: none;
+}
+
+header {
+  width: 100%;
+  height: 22em;
+  display: flex;
+  background-image:url(samfoxview.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: center;
+}
+
+header::before {
+    content: " ";
+    width: 100%;
+    height: 22em;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.1));
+    position: absolute;
+    z-index: 0;
+}
+
+#headtitle {
+  z-index: 2;
+  height: 20%;
+  width: auto;
+  margin: auto;
+}
+
+main {
+  text-align: center;
+}
+
+.row {
+  width: 80%;
+  margin: 2% auto auto auto;
+}
+
+.column1, .column2 {
+  float: left;
+}
+
+.column1 {
+  width: 50%;
+  padding-right: 10%;
+  display: inline-block;
+}
+
+.column2 {
+  display: inline-block;
+  width: 40%;
+}
+
+.row:after {
+  content: "";
+  display:table;
+  clear:both;
+}
+
+.about {
+  font-family: "future pt", sans-serif;
+}
+
+#calendar {
+  height: 31em;
+  width: 100%;
+  overflow: auto;
+  background-color: #2bb7ec;
+  padding: 1%;
+  border-radius: 20px;
+}
+
+.entry {
+  text-align: left;
+  display:block;
+  padding: 3%;
+  margin: 0.5% 0%;
+  font-family: "future pt", sans-serif;
+}
+
+.date {
+  font-size: 1.5em;
+  display:inline-block;
+  padding: 5%;
+  background-color: #fff;
+  border-radius: 20px;
+}
+
+.event {
+  display: inline-block;
+  padding-left: 5%;
+}
+
+.eventdescrip {
+  margin: 0;
+  /* display: inline-block; */
+}
