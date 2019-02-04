@@ -8,7 +8,7 @@ nav {
   width: 100%;
   margin: 0%;
   background-color: #2bb7ec;
-  padding: 0.4% 0%;
+  padding: 0.3% 0%;
   /* opacity: 0.7; */
   transition: 0.3s;
   z-index: 99;
@@ -28,9 +28,10 @@ nav ul {
 nav ul li {
   display:inline;
   color: #fff;
-  padding: 0% 5% 0% 2%;
-  font-family: Verdana,Geneva,sans-serif;
-  font-size: 1em;
+  padding: 0% 2%;
+  font-family: Economica;
+  font-size: 1.2em;
+  letter-spacing: 1px;
 }
 
 nav a {
@@ -71,7 +72,7 @@ nav a:hover {
 
 header {
   width: 100%;
-  height: 22em;
+  height: 18em;
   display: flex;
   background-image:url(samfoxview.jpg);
   background-repeat: no-repeat;
@@ -82,7 +83,7 @@ header {
 header::before {
     content: " ";
     width: 100%;
-    height: 22em;
+    height: 18em;
     background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.1));
     position: absolute;
     z-index: 0;
@@ -125,8 +126,21 @@ main {
   clear:both;
 }
 
+h2 {
+	font-family: Economica;
+  font-size: 2em;
+	font-weight: normal;
+	letter-spacing: 2px;
+	border-bottom: 1px dotted #A8EEF1;
+	text-transform: uppercase;
+  padding-bottom: 0.5em;
+}
+
 .about {
-  font-family: "future pt", sans-serif;
+	font-family: 'Nunito', sans-serif;
+  height: 31em;
+  width: 100%;
+  overflow: auto;
 }
 
 #calendar {
@@ -143,7 +157,7 @@ main {
   display:block;
   padding: 3%;
   margin: 0.5% 0%;
-  font-family: "future pt", sans-serif;
+  font-family: 'Nunito', sans-serif;
 }
 
 .date {
